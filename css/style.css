@@ -80,9 +80,11 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/Self1.png') no-repeat;
-    background-size: cover;
+    background: url("../images/self1.png") no-repeat;
+    background-size:cover;
     background-position: center;
+    width: 100%;
+    height: 105%;
 }
 
 .home-content {
@@ -219,24 +221,6 @@ section{
     transition: .5s;
 }
 
-.home-sci a:hover::before{
-    width: 100%;
-}
-
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 49%;
-    height: 84.2%;
-    background: transparent;
-    transition: 5s;
-}
-
-.home-imgHover:hover{
-    background: var(--bg-color);
-    opacity: .4;
-}
 
 .about {
     display: flex;
@@ -316,12 +300,15 @@ section{
     flex-direction: column;
     min-height: auto;
     padding-bottom: 5rem;
+    width: 100%;
+    height: auto;
 }
 
 .education .education-row{
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
+    width: 90%;
 }
 
 .education .education-column{
