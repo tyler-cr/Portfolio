@@ -18,16 +18,19 @@
 
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Tyler.</a>
+        <a href="#" class="logo">Tyler.<span class="animate" style="--i:1;"></span></a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
         </nav>
             
     </header>
@@ -35,7 +38,8 @@
     <!-- home section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1> Hi, my name's <span>Tyler Crimando</span> </h1>
+            <h1> Hi, my name's
+                <span>Tyler Crimando</span> </h1>
                 <div class="text-animate">
                     <h3>Silly Computer Man</h3>
                 </div>
@@ -48,15 +52,15 @@
                 </p>
 
                 <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">Let's Talk</a>
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#contact" class="btn">Let's Talk</a>
                 </div>   
         </div>
 
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-github' ></i></a>
-            <a href="#"><i class='bx bxs-camera-movie' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/tyler-cr" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://tylercrimando.godaddysites.com" target="_blank"><i class='bx bxs-camera-movie' ></i></a>
+            <a href="https://www.linkedin.com/in/tyler-crimando-31084116a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
 
         <div class="home-imgHover"></div>
@@ -72,7 +76,7 @@
 
         <div class="about-content">
             <h3>Film, Game Dev, and Machine Learning Nerd</h3>
-            <p>Hey there, I'm Tyler Crimando and thanks for looking at my page! I'm a film and writing editor, producer, and 
+            <p> Hey there, I'm Tyler Crimando and thanks for looking at my page! I'm a film and writing editor, producer, and 
                 programmer, with a strong passion for both the creative and technical aspects of my work.
                 I've been fascinated with film since I was young, and I love being part of the process that brings stories to 
                 life on screen. Whether it's working with a director to shape the narrative, collaborating with a cinematographer
@@ -88,9 +92,9 @@
                 If you're interested in learning more about my work or have a project you'd like to discuss, I'd love to hear from you. 
                 Feel free to reach out anytime, and let's see what we can create together!</p>
 
-                <div class="btn-box btns">
+                <!-- <div class="btn-box btns">
                     <a href="#" class="btn">Read More</a>
-                </div>
+                </div> -->
         </div>
     </section>
 
@@ -105,8 +109,20 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - Current</div>
+                            <h3>Computer Science - University of Arizona</h3>
+                            <ul>
+                                <p>Bachelor of Science in Computer Science, In Progress</p>
+                                <p>Actively Seeking Research Opportunities in Machine Learning</p>
+                                <p>School Ranked #1 Among Publicly Funded Universities With Faculty Size of 15-20</p>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
                             <div class="year"><i class='bx bx-calendar' ></i> 2018 - 2022</div>
-                            <h3>Bachelors - University of Arizona</h3>
+                            <h3>Film and Television - University of Arizona</h3>
                             <ul>
                                 <p>Bachelor of Arts in Film and Television, Editing Emphasis, Cum Laude</p>
                                 <p>Disability Resource Center Notetaker for Prof. Shane Riches' Film Production II Class</p>
@@ -117,24 +133,12 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2018 - 2022</div>
-                            <h3>Bachelors - University of Arizona</h3>
+                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - Current</div>
+                            <h3>Certifications</h3>
                             <ul>
-                                <p>Bachelor of Arts in Film and Television, Editing Emphasis, Cum Laude</p>
-                                <p>Disability Resource Center Notetaker for Prof. Shane Riches' Film Production II Class</p>
-                                <p>Dean's List Honors and Academic Distinctions, Wildcat Excel Scholarship recipient</p>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2018 - 2022</div>
-                            <h3>Bachelors - University of Arizona</h3>
-                            <ul>
-                                <p>Bachelor of Arts in Film and Television, Editing Emphasis, Cum Laude</p>
-                                <p>Disability Resource Center Notetaker for Prof. Shane Riches' Film Production II Class</p>
-                                <p>Dean's List Honors and Academic Distinctions, Wildcat Excel Scholarship recipient</p>
+                                <p>Microsoft AZ-900 Azure Fundamentals</p>
+                                <p>Amazon CLF-C002 AWS Certified Cloud Practitioner</p>
+                                <p>Cognizant IOA Geenrative AI</p>
                             </ul>
                         </div>
                     </div>
@@ -149,8 +153,8 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2023</div>
-                            <h3>Content Writer - Cognizant</h3>
+                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - Current</div>
+                            <h3>Senior Process Executive - Cognizant</h3>
                             <ul>
                                 <p>Edited AI generated content based on user inquiries to adjust AI algorithm</p>
                                 <p>Led backend development on archival and search based website project</p>
@@ -189,6 +193,125 @@
 
         </div>
     </section>
+
+    <!-- skills section design-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My Skills</h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Javascript <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+
+                        <div class="progress">
+                            <h3>Web Design <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>67%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Graphic Design <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>SEO Marketing <span>45%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me!</h2>
+        <p class="ContactWO">At the moment, the below form doesn't function. If you would like to reach me, please email me at <span class="email">tjcrimando@gmail.com</span> . Thanks!</p>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Tyler Crimando | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
