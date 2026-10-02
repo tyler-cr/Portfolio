@@ -3,316 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Tyler Crimando Portfolio</title>
-
+    <meta name="description" content="Tyler James Crimando, computer science undergraduate researcher at Arizona State University. Algorithms, security, systems, signal processing, and teaching.">
+    <title>Tyler Crimando | Research &amp; Computing</title>
     <link rel="stylesheet" href="./css/style.css">
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Tyler.<span class="animate" style="--i:1;"></span></a>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
+        <a href="#home" class="logo">Tyler.</a>
+        <button type="button" class="bx bx-menu" id="menu-icon" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false"></button>
+        <nav class="navbar" id="primary-nav" aria-label="Main navigation">
+            <a href="#home" class="active" aria-current="location">Home</a>
             <a href="#about">About</a>
-            <a href="#education">Education/Work</a>
+            <a href="#education">Journey</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
-
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
+            <span class="active-nav" aria-hidden="true"></span>
         </nav>
-            
     </header>
-
-    <!-- home section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1> Hi, my name's
-                <span>Tyler Crimando</span> </h1>
-                <div class="text-animate">
-                    <h3>Silly Computer Man</h3>
-                </div>
-                <p>
-                    Possessing a strong creative vision and technical expertise, I bring a unique blend of artistic flair and 
-                    analytical thinking to my work. With experience in capturing stunning visual narratives, editing and
-                    post-production techniques, and software development, I am adept at merging these disciplines to produce 
-                    exceptional results. Through my combined expertise in photography, film, and programming, I strive to 
-                    create captivating experiences that leave a lasting impact.
-                </p>
-
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, my name's <span>Tyler Crimando</span></h1>
+                <div class="text-animate"><h2>Researcher &amp; Educator</h2></div>
+                <p>I'm a computer science undergraduate researcher at Arizona State University in Tempe, Arizona,
+                    preparing for PhD study. My work spans algorithms and complexity, computer security, systems,
+                    and signal processing, from acoustic sensing and neural networks to chess game trees and hands-on security.</p>
                 <div class="btn-box">
-                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#research" class="btn">My Research</a>
                     <a href="#contact" class="btn">Let's Talk</a>
-                </div>   
-        </div>
-
-        <div class="home-sci">
-            <a href="https://github.com/tyler-cr" target="_blank"><i class='bx bxl-github' ></i></a>
-            <a href="https://tylercrimando.godaddysites.com" target="_blank"><i class='bx bxs-camera-movie' ></i></a>
-            <a href="https://www.linkedin.com/in/tyler-crimando-31084116a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        </div>
-
-        <div class="home-imgHover"></div>
-    </section>
-
-    <!-- about section -->
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span> </h2>
-        <div class="about-img">
-            <img src="images/AboutMe.png" alt="">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Film, Game Dev, and Machine Learning Nerd</h3>
-            <p> Hey there, I'm Tyler Crimando and thanks for looking at my page! I'm a film and writing editor, producer, and 
-                programmer, with a strong passion for both the creative and technical aspects of my work.
-                I've been fascinated with film since I was young, and I love being part of the process that brings stories to 
-                life on screen. Whether it's working with a director to shape the narrative, collaborating with a cinematographer
-                 to create stunning visuals, or putting the finishing touches on a final cut, I'm always excited about the 
-                 creative possibilities of film editing and producing.
-                At the same time, I'm also passionate about programming and building things with technology. There's something 
-                incredibly satisfying about solving problems with code and seeing how it can make a real-world impact. I've spent 
-                a lot of time working with C++ and Python, and I love the challenges and opportunities that come with these languages.
-                When I'm not working on film or programming projects, you can usually find me at the gym powerlifting or outside doing 
-                analog photography. I love spending time in nature and finding inspiration for my work in the world around me.
-                I've had the pleasure of working with a diverse range of clients and collaborators, from independent filmmakers to tech 
-                startups. I'm always looking for new opportunities to connect with people and bring fresh perspectives to creative projects.
-                If you're interested in learning more about my work or have a project you'd like to discuss, I'd love to hear from you. 
-                Feel free to reach out anytime, and let's see what we can create together!</p>
-
-                <!-- <div class="btn-box btns">
-                    <a href="#" class="btn">Read More</a>
-                </div> -->
-        </div>
-    </section>
-
-    <!-- education section -->
-    <section class="education" id="education">
-        <h2 class="heading">My Journey</h2>
-
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - Current</div>
-                            <h3>Computer Science - University of Arizona</h3>
-                            <ul>
-                                <p>Bachelor of Science in Computer Science, In Progress</p>
-                                <p>Actively Seeking Research Opportunities in Machine Learning</p>
-                                <p>School Ranked #1 Among Publicly Funded Universities With Faculty Size of 15-20</p>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2018 - 2022</div>
-                            <h3>Film and Television - University of Arizona</h3>
-                            <ul>
-                                <p>Bachelor of Arts in Film and Television, Editing Emphasis, Cum Laude</p>
-                                <p>Disability Resource Center Notetaker for Prof. Shane Riches' Film Production II Class</p>
-                                <p>Dean's List Honors and Academic Distinctions, Wildcat Excel Scholarship recipient</p>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - Current</div>
-                            <h3>Certifications</h3>
-                            <ul>
-                                <p>Microsoft AZ-900 Azure Fundamentals</p>
-                                <p>Amazon CLF-C002 AWS Certified Cloud Practitioner</p>
-                                <p>Cognizant IOA Geenrative AI</p>
-                            </ul>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
-
-            <div class="education-column">
-                <h3 class="title">Experience</h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2023 - Current</div>
-                            <h3>Senior Process Executive - Cognizant</h3>
-                            <ul>
-                                <p>Edited AI generated content based on user inquiries to adjust AI algorithm</p>
-                                <p>Led backend development on archival and search based website project</p>
-                                <p>Aided in liaison between writers, editors, QAs, and team leads</p>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2022 - 2023</div>
-                            <h3>Color Technician - iMemories</h3>
-                            <ul>
-                                <p>Color corrected film and photos using Adobe Premiere Pro and Photoshop</p>
-                                <p>Recognized analog color degradation and established patterns on how to fix them</p>
-                                <p>Troubleshoot both PC and Mac tech issues involving multiple Adobe products</p>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar' ></i> 2017 - 2019</div>
-                            <h3>Replacement Personnel - Quiktrip</h3>
-                            <ul>
-                                <p>Handled inquiries, solving dilemmas satisfactory to both customers and managers</p>
-                                <p>Responsible for covering and taking shifts all across Maricopa county as a stand-in</p>
-                                <p>Handled detail-oriented tasks for store upkeep</p>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
+            <div class="home-sci">
+                <a href="https://github.com/tyler-cr" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="bx bxl-github" aria-hidden="true"></i></a>
+                <a href="mailto:tjcrimando@gmail.com" aria-label="Email Tyler" title="Email Tyler"><i class="bx bx-envelope" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/tyler-crimando-31084116a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="about" id="about">
+            <h2 class="heading">About <span>Me</span></h2>
+            <div class="about-img">
+                <img src="images/AboutMe.png" alt="Tyler Crimando" loading="lazy">
+                <span class="circle-spin" aria-hidden="true"></span>
+            </div>
+            <div class="about-content">
+                <h3>Algorithms, Security, Systems &amp; Sensing</h3>
+                <p>I'm interested in how we reason about complex problems, build systems to investigate them, and explain
+                    what we learn. In ASU's C.O.M.P.A.S.S. Research Group, I work with Dr. Nariman Mahabadi on
+                    subsurface anomaly detection, combining field instrumentation, reproducible Python pipelines,
+                    spectrograms, and convolutional neural networks. My algorithms work uses chess to explore
+                    large state spaces, pruning, and time-space tradeoffs.</p>
+                <p>Teaching is a big part of that work. I support ASU students in Introduction to Cybersecurity and
+                    Operating Systems, building on experience teaching mathematics, engineering, photography, and chess.
+                    My background in film and television editing still shapes how I communicate technical ideas.
+                    Long term, I want to pursue research and teaching in algorithms, security, systems, and computational methods.</p>
+            </div>
+        </section>
 
-    <!-- skills section design-->
-    <section class="skills" id="skills">
-        <h2 class="heading">My Skills</h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Javascript <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+        <section class="education" id="education">
+            <h2 class="heading">My Journey</h2>
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Education &amp; Training</h3>
+                    <div class="education-box">
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> Expected May 2027</div>
+                            <h3>B.S. Computer Science - Arizona State University</h3>
+                            <p>GPA: 4.00/4.00. Dean's List and IEEE-HKN member.</p>
+                            <p>Coursework includes algorithms, NP-completeness, theoretical computer science,
+                                program and systems security, operating systems, programming languages, and computer graphics.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> May 2022</div>
+                            <h3>B.A. Film &amp; Television - University of Arizona</h3>
+                            <p>Editing emphasis. GPA: 3.60/4.00. Cum laude and Dean's List.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> August 2026 - Present</div>
+                            <h3>pwn.college Security Training</h3>
+                            <p>Orange Belt earned August 29, 2026. Yellow and Green Belts expected December 12, 2026.</p>
+                            <p>Hands-on work in reverse engineering, web and binary exploitation, shellcode,
+                                cryptography, memory corruption, and custom architectures.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> September 2026</div>
+                            <h3>Capture the Flag</h3>
+                            <p>Competed in CSAW CTF Qualifiers with Shellphish, which placed 7th and qualified for finals.
+                                Worked on web, crypto, pwn, and reverse-engineering challenges.</p>
+                            <p>Participated in Sunshine CTF with ASU's CTF-Academy team, focusing on reverse-engineering
+                                and miscellaneous challenges.</p>
+                        </div></article>
+                    </div>
+                </div>
+                <div class="education-column">
+                    <h3 class="title">Research &amp; Teaching</h3>
+                    <div class="education-box">
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> May 2026 - Present</div>
+                            <h3>Undergraduate Researcher - ASU C.O.M.P.A.S.S.</h3>
+                            <p>Advisor: Dr. Nariman Mahabadi. Develop sensing and machine-learning pipelines for
+                                anomaly detection in granular media, from field data collection to CNN classification.</p>
+                            <p>Authored a multi-user, multi-OS operating procedure for reproducible setup,
+                                hardware configuration, and experiment handoff.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> Fall 2026</div>
+                            <h3>Teaching / Learning Assistant - Arizona State University</h3>
+                            <p>Support Introduction to Cybersecurity and Operating Systems through office hours,
+                                assignment debugging, and technical explanations.</p>
+                            <p>Topics include exploitation, reverse engineering, synchronization, scheduling,
+                                virtual memory, kernel modules, and process management.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> July - September 2026</div>
+                            <h3>Student Researcher - IEEE-HKN Conference Project</h3>
+                            <p>Developed chess-based algorithms and visual examples to teach exponential growth,
+                                game-tree search, pruning, and time-space tradeoffs.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> February 2025 - June 2026</div>
+                            <h3>Teacher - Brightmont Academy</h3>
+                            <p>Taught individualized mathematics, engineering, and photography courses, adapting
+                                technical explanations to students with varied preparation and learning needs.</p>
+                        </div></article>
+                        <article class="education-content"><div class="content">
+                            <div class="year"><i class="bx bx-calendar" aria-hidden="true"></i> December 2023 - May 2025</div>
+                            <h3>Instructor &amp; Administrator - Chess Emporium</h3>
+                            <p>Taught chess strategy, managed storage and front-office workflows, and built an internal
+                                email-generation web app for customized administrative communication.</p>
+                        </div></article>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
+        <section class="research" id="research">
+            <h2 class="heading">Research &amp; Publications</h2>
+            <div class="detail-row">
+                <div class="detail-column">
+                    <h3 class="title">Current Focus</h3>
+                    <article class="detail-item">
+                        <h4>Acoustic Sensing &amp; Machine Learning</h4>
+                        <p>An end-to-end pipeline for subsurface anomaly detection in sand and soil: controlled acoustic
+                            signals, geophone recordings, preprocessing, spectrogram datasets, and CNN classification.</p>
+                        <p>CSV-driven Python tooling supports waveform-generator control, batch WAV augmentation,
+                            object-presence classification, geophone-placement analysis, and wave-frequency estimation.
+                            Experiments integrate Zoom F3 recordings and ROS 2 rover / UGV platforms.</p>
+                    </article>
+                    <article class="detail-item">
+                        <h4>Chess &amp; Computational Complexity</h4>
+                        <p>Recursive legal-move generation and pruning to enumerate reachable positions and reduce
+                            redundant traversal. Compared dictionary, set, trie, and list-based storage and duplicate
+                            detection through search depth 5.</p>
+                    </article>
+                </div>
+                <div class="detail-column">
+                    <h3 class="title">Publications &amp; Presentations</h3>
+                    <article class="detail-item">
+                        <p class="item-meta">2026 &middot; In preparation</p>
+                        <h4>Sub-byte Storage for Space and Time Optimization in Chess</h4>
+                        <p>Tyler Crimando.</p>
+                    </article>
+                    <article class="detail-item">
+                        <p class="item-meta">2026 &middot; Accepted</p>
+                        <h4>Computational Complexity Through the Lens of Chess</h4>
+                        <p>Tyler Crimando. IEEE-HKN Innovating the Future Conference.</p>
+                    </article>
+                    <article class="detail-item">
+                        <p class="item-meta">2026 &middot; Poster</p>
+                        <h4>Spectrogram-Based Neural Networks for Rover-Assisted Anomaly Detection in Granular Media</h4>
+                        <p>Tyler Crimando and Nariman Mahabadi. Arizona State University Summer Research Initiative.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="skills-box">
-                    <div class="skills-content">
+        <section class="projects" id="projects">
+            <h2 class="heading">Selected Projects</h2>
+            <div class="project-grid">
+                <article class="project-item">
+                    <p class="item-meta">C++ &middot; Language implementation</p>
+                    <h3>Recursive Descent Parser &amp; Semantic Analyzer</h3>
+                    <p>A lexer/parser pipeline for a polynomial language with recursive descent parsing,
+                        symbol tracking, semantic error detection, and execution-time analysis.</p>
+                </article>
+                <article class="project-item">
+                    <p class="item-meta">ASU CSE 485 &middot; Fall 2026</p>
+                    <h3>Aptamer Therapeutics Connected Biosensor Platform</h3>
+                    <p>Systems-integration capstone connecting biosensor data, a mobile app, backend services,
+                        historical patient data, visualization, and medication-recommendation concepts.
+                        Project details are limited by NDA.</p>
+                </article>
+                <article class="project-item">
+                    <p class="item-meta">Python / Flask &middot; File analysis</p>
+                    <h3>Forensic Fish</h3>
+                    <p>A desktop application that inspects images, audio, and other selected file types,
+                        detecting and extracting potential hidden data.</p>
+                </article>
+                <article class="project-item">
+                    <p class="item-meta">Python / JavaScript / WebGL</p>
+                    <h3>SpectroVisualizer</h3>
+                    <p>A real-time audio visualization web app using WebGL shaders and API-assisted preset
+                        generation for user-uploaded audio.</p>
+                </article>
+                <article class="project-item">
+                    <p class="item-meta">Python / Flask &middot; Security education</p>
+                    <h3>Web Security Challenge</h3>
+                    <p>A custom educational challenge built around chained vulnerability reasoning, including
+                        path traversal, encoded paths, XSS, SQL injection, and authorization and session logic.</p>
+                </article>
+            </div>
+            <a class="text-link" href="https://github.com/tyler-cr" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github" aria-hidden="true"></i> More on GitHub <i class="bx bx-link-external" aria-hidden="true"></i></a>
+        </section>
 
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
+        <section class="skills" id="skills">
+            <h2 class="heading">My Expertise</h2>
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Research &amp; Specialties</h3>
+                    <div class="skills-box"><div class="skills-content">
+                        <div class="skill-item">
+                            <h4>Algorithms &amp; Complexity</h4>
+                            <p>Recursive search, game trees, pruning, duplicate detection, data structures, and time-space tradeoffs.</p>
                         </div>
-
-                        <div class="progress">
-                            <h3>Web Development <span>67%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <div class="skill-item">
+                            <h4>Computer Security</h4>
+                            <p>Reverse engineering, binary and web exploitation, cryptography, shellcode, and Linux access control.</p>
                         </div>
-
-                        <div class="progress">
-                            <h3>Graphic Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <div class="skill-item">
+                            <h4>Signal Processing &amp; Machine Learning</h4>
+                            <p>CNNs, spectrograms, audio preprocessing, dataset generation, and reproducible experiment pipelines.</p>
                         </div>
-
-                        <div class="progress">
-                            <h3>SEO Marketing <span>45%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <div class="skill-item">
+                            <h4>Systems &amp; Technical Teaching</h4>
+                            <p>Operating systems, hardware/software integration, technical documentation, and individualized instruction.</p>
                         </div>
-                    </div>
+                    </div></div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="title">Languages &amp; Tools</h3>
+                    <div class="skills-box"><div class="skills-content">
+                        <div class="skill-item">
+                            <h4>Programming</h4>
+                            <p>Python, C, C++, Java, JavaScript, SQL, Bash, HTML/CSS, and LaTeX.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Research &amp; Data</h4>
+                            <p>TensorFlow, NumPy, pandas, scikit-learn, PyVISA, ROS 2, geophones, and waveform-generator control.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Systems &amp; Security Tools</h4>
+                            <p>Linux, WSL, Git, GitHub, GDB/GEF, pwntools, curl, Flask, and custom VM / ISA analysis.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Graphics &amp; Media</h4>
+                            <p>WebGL, shaders, image processing, Sciter, WAV/audio processing, and film editing.</p>
+                        </div>
+                    </div></div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact Me!</h2>
-        <p class="ContactWO">At the moment, the below form doesn't function. If you would like to reach me, please email me at <span class="email">tjcrimando@gmail.com</span> . Thanks!</p>
-
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </div>
-
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </div>
+        <section class="contact" id="contact">
+            <h2 class="heading">Let's Connect</h2>
+            <p>I'd love to connect about research, PhD opportunities, teaching, or a shared technical problem.</p>
+            <a class="contact-email" href="mailto:tjcrimando@gmail.com">tjcrimando@gmail.com</a>
+            <p>Tempe, Arizona</p>
+            <div class="contact-links">
+                <a href="https://github.com/tyler-cr" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github" aria-hidden="true"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/tyler-crimando-31084116a/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin" aria-hidden="true"></i> LinkedIn</a>
             </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
-    </section>
-
-
-    <!-- footer design -->
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by Tyler Crimando | All Rights Reserved.</p>
+            <p>Copyright &copy; 2026 Tyler James Crimando | All Rights Reserved.</p>
         </div>
-
         <div class="footer-iconTop">
-            <a href="#home"><i class='bx bxs-up-arrow-alt'></i></a>
+            <a href="#home" aria-label="Back to top" title="Back to top"><i class="bx bxs-up-arrow-alt" aria-hidden="true"></i></a>
         </div>
     </footer>
-
     <script src="./js/script.js"></script>
 </body>
 </html>

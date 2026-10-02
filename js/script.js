@@ -1,39 +1,50 @@
-// toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const header = document.querySelector('.header');
+const sections = [...document.querySelectorAll('main section')];
+const navLinks = document.querySelectorAll('header nav a');
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+function setMenuOpen(open) {
+    menuIcon.classList.toggle('bx-x', open);
+    navbar.classList.toggle('active', open);
+    menuIcon.setAttribute('aria-expanded', String(open));
+    menuIcon.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
 }
 
-// scroll sections
+menuIcon.addEventListener('click', () => {
+    setMenuOpen(menuIcon.getAttribute('aria-expanded') !== 'true');
+});
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+navLinks.forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop -250;
-        let id = sec.getAttribute('id');
-        let height = sec.offsetHeight;
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navbar.classList.contains('active')) {
+        setMenuOpen(false);
+        menuIcon.focus();
+    }
+});
 
-        if(top >= offset && top < offset + height){
-            // active navbar links 
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*= ' + id + ']').classList.add('active');
-            })
-        }
-    })
+window.matchMedia('(max-width: 900px)').addEventListener('change', () => setMenuOpen(false));
 
-    // sticky header
-    let header = document.querySelector('header');
-
+function updateNavigation() {
+    const position = window.scrollY + header.offsetHeight + 40;
+    let activeSection = sections[0];
+    sections.forEach(section => {
+        if (section.offsetTop <= position) activeSection = section;
+    });
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+        activeSection = sections[sections.length - 1];
+    }
+    navLinks.forEach(link => {
+        const active = link.hash === '#' + activeSection.id;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+    });
     header.classList.toggle('sticky', window.scrollY > 100);
-
-    // remove toggle icon and navbar when click navbar links (scroll)
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
 }
+
+window.addEventListener('scroll', updateNavigation, { passive: true });
+window.addEventListener('resize', updateNavigation);
+window.addEventListener('load', updateNavigation);
+updateNavigation();
